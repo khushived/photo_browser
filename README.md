@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# Photo Browser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, accessible web-based photo browser that allows you to explore and view images from your local folders directly in your browser.
 
-## Available Scripts
+![Photo Browser Interface](https://via.placeholder.com/800x400/4a90e2/ffffff?text=Photo+Browser+Interface)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+### 🖼️ Image Viewing & Navigation
+- **Responsive masonry grid layout** for beautiful image display
+- **Full-screen image viewer** with smooth navigation
+- **Keyboard navigation**: Use arrow keys (←/→) to navigate between images, Escape to close viewer
+- **Click navigation**: Previous/Next buttons for easy browsing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📁 File System Integration
+- **Secure local file access** using the File System Access API
+- **Folder browsing** with intuitive navigation
+- **Back button** to navigate to parent directories
+- **File type differentiation** with appropriate icons and actions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔍 Search & Filter
+- **Real-time search** through file names
+- **Instant filtering** of the image grid as you type
 
-### `npm test`
+### 📄 Multi-format Support
+- **Image formats**: JPG, PNG, GIF, WebP, BMP, SVG
+- **Text file preview**: TXT, MD, JSON, JS/JSX, TS/TSX, CSS, HTML, XML
+- **Document download**: PDF, DOC, DOCX
+- **Archive download**: ZIP, RAR, 7Z
+- **Media download**: MP3, WAV, FLAC, MP4, AVI, MKV
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ♿ Accessibility Features
+- **Keyboard navigation** throughout the application
+- **Screen reader friendly** with proper ARIA labels
+- **High contrast icons** for different file types
+- **Semantic HTML structure** for better navigation
+- **Focus management** in modal dialogs
 
-### `npm run build`
+## 🚀 Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- **Node.js** (version 14 or higher)
+- **Modern web browser** with File System Access API support:
+  - Google Chrome (recommended)
+  - Microsoft Edge
+  - Other Chromium-based browsers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone or download** this repository
+2. **Navigate to the project directory**:
+   ```bash
+   cd photo-browser
+   ```
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+### Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Start the development server**:
+   ```bash
+   npm start
+   ```
+2. **Open your browser** and navigate to:
+   ```
+   http://localhost:3000
+   ```
+3. **Select a folder** to start browsing your photos!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📖 How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Getting Started
+1. Click the **"Select Folder"** button
+2. Choose a directory containing your images
+3. Browse through your photos in the responsive grid
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Viewing Images
+- **Click any image** to open it in full-screen view
+- **Navigate using keyboard**:
+  - `←` Previous image
+  - `→` Next image
+  - `Escape` Close viewer
+- **Use navigation buttons** in the viewer for previous/next
 
-## Learn More
+### File Operations
+- **Images**: Click to view in full-screen
+- **Text files**: Click to preview content in a modal
+- **Other files**: Click to download
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Search Functionality
+- **Type in the search box** to filter files by name
+- **Search is case-insensitive** and works in real-time
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Development
 
-### Code Splitting
+### Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (irreversible)
 
-### Analyzing the Bundle Size
+### Project Structure
+```
+photo-browser/
+├── public/
+│   ├── index.html
+│   └── manifest.json
+├── src/
+│   ├── App.js          # Main application component
+│   ├── App.css         # Application styles
+│   ├── index.js        # Application entry point
+│   └── ...
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌐 Browser Support
 
-### Making a Progressive Web App
+This application uses the **File System Access API**, which requires modern browsers:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Browser | Version | Status |
+|---------|---------|--------|
+| Chrome | 86+ | ✅ Fully Supported |
+| Edge | 86+ | ✅ Fully Supported |
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Note**: If your browser doesn't support the File System Access API, you'll see a notification with instructions to use a compatible browser.
 
-### Deployment
+## ♿ Accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This application is designed with accessibility in mind:
 
-### `npm run build` fails to minify
+- **Keyboard Navigation**: Full keyboard support for all interactions
+- **Screen Reader Support**: Proper ARIA labels and semantic HTML
+- **Focus Management**: Logical tab order and focus indicators
+- **Color Contrast**: High contrast icons and readable text
+- **Responsive Design**: Works on various screen sizes and devices
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Keyboard Shortcuts
+- `Tab` / `Shift+Tab`: Navigate between interactive elements
+- `Enter` / `Space`: Activate buttons and links
+- `←` / `→`: Navigate between images (when viewer is open)
+- `Escape`: Close image viewer or modals
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to submit issues and pull requests.
+
+### Development Setup
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test accessibility with screen readers
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Create React App](https://create-react-app.dev/)
+- Masonry layout powered by [react-masonry-css](https://github.com/paulcollett/react-masonry-css)
+- Icons from various open source collections
+
+---
+
+**Enjoy browsing your photos! 📸**
